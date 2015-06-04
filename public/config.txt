@@ -1,0 +1,3 @@
+ssl
+mime type extension=php_fileinfo uncomment
+mail

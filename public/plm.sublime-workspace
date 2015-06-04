@@ -1,0 +1,849 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"st",
+				"style	Tag"
+			],
+			[
+				"ech",
+				"echo"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "<?php\n\n/*\n|--------------------------------------------------------------------------\n| Application Routes\n|--------------------------------------------------------------------------\n|\n| Here is where you can register all of the routes for an application.\n| It's a breeze. Simply tell Laravel the URIs it should respond to\n| and give it the controller to call when that URI is requested.\n|\n*/\n\nRoute::get('/', 'WelcomeController@index');\n\n\nRoute::get('home', 'HomeController@index');\nRoute::get('student', 'StudentController@index');\n\nRoute::controllers([\n	'auth' => 'Auth\\AuthController',\n	'password' => 'Auth\\PasswordController',\n]);\n",
+			"file": "app/Http/routes.php",
+			"file_size": 636,
+			"file_write_time": 130725503695130657,
+			"settings":
+			{
+				"buffer_size": 636,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<?php namespace App\\Http\\Controllers\\Auth;\n\nuse App\\Http\\Controllers\\Controller;\nuse Illuminate\\Contracts\\Auth\\Guard;\nuse Illuminate\\Contracts\\Auth\\Registrar;\nuse Illuminate\\Foundation\\Auth\\AuthenticatesAndRegistersUsers;\n\nclass AuthController extends Controller {\n\n	/*\n	|--------------------------------------------------------------------------\n	| Registration & Login Controller\n	|--------------------------------------------------------------------------\n	|\n	| This controller handles the registration of new users, as well as the\n	| authentication of existing users. By default, this controller uses\n	| a simple trait to add these behaviors. Why don't you explore it?\n	|\n	*/\n\n	use AuthenticatesAndRegistersUsers;\n\n	/**\n	 * Create a new authentication controller instance.\n	 *\n	 * @param  \\Illuminate\\Contracts\\Auth\\Guard  $auth\n	 * @param  \\Illuminate\\Contracts\\Auth\\Registrar  $registrar\n	 * @return void\n	 */\n	public function __construct(Guard $auth, Registrar $registrar)\n	{\n		$this->auth = $auth;\n		$this->registrar = $registrar;\n\n		$this->middleware('guest', ['except' => 'getLogout']);\n	}\n\n}\n",
+			"file": "app/Http/Controllers/Auth/AuthController.php",
+			"file_size": 1103,
+			"file_write_time": 130725452113811166,
+			"settings":
+			{
+				"buffer_size": 1103,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<?php\n/**\n * Laravel - A PHP Framework For Web Artisans\n *\n * @package  Laravel\n * @author   Taylor Otwell <taylorotwell@gmail.com>\n */\n\n/*\n|--------------------------------------------------------------------------\n| Register The Auto Loader\n|--------------------------------------------------------------------------\n|\n| Composer provides a convenient, automatically generated class loader for\n| our application. We just need to utilize it! We'll simply require it\n| into the script here so that we don't have to worry about manual\n| loading any of our classes later on. It feels nice to relax.\n|\n*/\n\nrequire __DIR__.'/../../plm_laravel/bootstrap/autoload.php';\n\n/*\n|--------------------------------------------------------------------------\n| Turn On The Lights\n|--------------------------------------------------------------------------\n|\n| We need to illuminate PHP development, so let us turn on the lights.\n| This bootstraps the framework and gets it ready for use, then it\n| will load up this application so that we can run it and send\n| the responses back to the browser and delight our users.\n|\n*/\n\n$app = require_once __DIR__.'/../../plm_laravel/bootstrap/app.php';\n\n/*\n|--------------------------------------------------------------------------\n| Run The Application\n|--------------------------------------------------------------------------\n|\n| Once we have the application, we can handle the incoming request\n| through the kernel, and send the associated response back to\n| the client's browser allowing them to enjoy the creative\n| and wonderful application we have prepared for them.\n|\n*/\n\n$kernel = $app->make('Illuminate\\Contracts\\Http\\Kernel');\n\n$response = $kernel->handle(\n	$request = Illuminate\\Http\\Request::capture()\n);\n\n$response->send();\n\n$kernel->terminate($request, $response);\n",
+			"file": "public/index.php",
+			"file_size": 1813,
+			"file_write_time": 130727003806753889,
+			"settings":
+			{
+				"buffer_size": 1807,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.php",
+			"settings":
+			{
+				"buffer_size": 1807,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/xampp/plm_laravel/.htaccess",
+			"settings":
+			{
+				"buffer_size": 98,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<?php namespace App\\Http\\Controllers;\n\nclass WelcomeController extends Controller {\n\n	/*\n	|--------------------------------------------------------------------------\n	| Welcome Controller\n	|--------------------------------------------------------------------------\n	|\n	| This controller renders the \"marketing page\" for the application and\n	| is configured to only allow guests. Like most of the other sample\n	| controllers, you are free to modify or remove it as you desire.\n	|\n	*/\n\n	/**\n	 * Create a new controller instance.\n	 *\n	 * @return void\n	 */\n	public function __construct()\n	{\n		$this->middleware('guest');\n	}\n\n	/**\n	 * Show the application welcome screen to the user.\n	 *\n	 * @return Response\n	 */\n	public function index()\n	{\n		return view('welcome');\n	}\n\n}\n",
+			"file": "app/Http/Controllers/WelcomeController.php",
+			"file_size": 769,
+			"file_write_time": 130725452114011166,
+			"settings":
+			{
+				"buffer_size": 769,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<?php\n\nuse Illuminate\\Database\\Schema\\Blueprint;\nuse Illuminate\\Database\\Migrations\\Migration;\n\nclass CreateUsersTable extends Migration {\n\n	/**\n	 * Run the migrations.\n	 *\n	 * @return void\n	 */\n	public function up()\n	{\n		Schema::create('users', function(Blueprint $table)\n		{\n			$table->increments('id');\n			$table->string('firstname');\n			$table->string('lastname');\n			$table->string('email')->unique();\n			$table->string('password', 60);\n			$table->tinyInteger('role');\n			$table->timestamp('birthdate');\n			$table->softDeletes();\n			$table->rememberToken();\n			$table->timestamps();\n		});\n	}\n\n	/**\n	 * Reverse the migrations.\n	 *\n	 * @return void\n	 */\n	public function down()\n	{\n		Schema::drop('users');\n	}\n\n}\n",
+			"file": "database/migrations/2014_10_12_000000_create_users_table.php",
+			"file_size": 715,
+			"file_write_time": 130725545807294084,
+			"settings":
+			{
+				"buffer_size": 715,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "{\n	\"name\": \"laravel/laravel\",\n	\"description\": \"The Laravel Framework.\",\n	\"keywords\": [\"framework\", \"laravel\"],\n	\"license\": \"MIT\",\n	\"type\": \"project\",\n	\"require\": {\n		\"laravel/framework\": \"5.0.*\",\n		\"laravel/socialite\": \"~2.0\"\n	},\n	\"require-dev\": {\n		\"phpunit/phpunit\": \"~4.0\",\n		\"phpspec/phpspec\": \"~2.1\"\n	},\n	\"autoload\": {\n		\"classmap\": [\n			\"database\"\n		],\n		\"psr-4\": {\n			\"App\\\\\": \"app/\"\n		}\n	},\n	\"autoload-dev\": {\n		\"classmap\": [\n			\"tests/TestCase.php\"\n		]\n	},\n	\"scripts\": {\n		\"post-install-cmd\": [\n			\"php artisan clear-compiled\",\n			\"php artisan optimize\"\n		],\n		\"post-update-cmd\": [\n			\"php artisan clear-compiled\",\n			\"php artisan optimize\"\n		],\n		\"post-create-project-cmd\": [\n			\"php -r \\\"copy('.env.example', '.env');\\\"\",\n			\"php artisan key:generate\"\n		]\n	},\n	\"config\": {\n		\"preferred-install\": \"dist\"\n	}\n}\n",
+			"file": "composer.json",
+			"file_size": 819,
+			"file_write_time": 130725452114711167,
+			"settings":
+			{
+				"buffer_size": 819,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<?php\n\nreturn [\n\n	/*\n	|--------------------------------------------------------------------------\n	| Application Debug Mode\n	|--------------------------------------------------------------------------\n	|\n	| When your application is in debug mode, detailed error messages with\n	| stack traces will be shown on every error that occurs within your\n	| application. If disabled, a simple generic error page is shown.\n	|\n	*/\n\n	'debug' => env('APP_DEBUG'),\n\n	/*\n	|--------------------------------------------------------------------------\n	| Application URL\n	|--------------------------------------------------------------------------\n	|\n	| This URL is used by the console to properly generate URLs when using\n	| the Artisan command line tool. You should set this to the root of\n	| your application so that it is used when running Artisan tasks.\n	|\n	*/\n\n	'url' => 'http://localhost',\n\n	/*\n	|--------------------------------------------------------------------------\n	| Application Timezone\n	|--------------------------------------------------------------------------\n	|\n	| Here you may specify the default timezone for your application, which\n	| will be used by the PHP date and date-time functions. We have gone\n	| ahead and set this to a sensible default for you out of the box.\n	|\n	*/\n\n	'timezone' => 'UTC',\n\n	/*\n	|--------------------------------------------------------------------------\n	| Application Locale Configuration\n	|--------------------------------------------------------------------------\n	|\n	| The application locale determines the default locale that will be used\n	| by the translation service provider. You are free to set this value\n	| to any of the locales which will be supported by the application.\n	|\n	*/\n\n	'locale' => 'en',\n\n	/*\n	|--------------------------------------------------------------------------\n	| Application Fallback Locale\n	|--------------------------------------------------------------------------\n	|\n	| The fallback locale determines the locale to use when the current one\n	| is not available. You may change the value to correspond to any of\n	| the language folders that are provided through your application.\n	|\n	*/\n\n	'fallback_locale' => 'en',\n\n	/*\n	|--------------------------------------------------------------------------\n	| Encryption Key\n	|--------------------------------------------------------------------------\n	|\n	| This key is used by the Illuminate encrypter service and should be set\n	| to a random, 32 character string, otherwise these encrypted strings\n	| will not be safe. Please do this before deploying an application!\n	|\n	*/\n\n	'key' => env('APP_KEY', 'SomeRandomString'),\n\n	'cipher' => MCRYPT_RIJNDAEL_128,\n\n	/*\n	|--------------------------------------------------------------------------\n	| Logging Configuration\n	|--------------------------------------------------------------------------\n	|\n	| Here you may configure the log settings for your application. Out of\n	| the box, Laravel uses the Monolog PHP logging library. This gives\n	| you a variety of powerful log handlers / formatters to utilize.\n	|\n	| Available Settings: \"single\", \"daily\", \"syslog\", \"errorlog\"\n	|\n	*/\n\n	'log' => 'daily',\n\n	/*\n	|--------------------------------------------------------------------------\n	| Autoloaded Service Providers\n	|--------------------------------------------------------------------------\n	|\n	| The service providers listed here will be automatically loaded on the\n	| request to your application. Feel free to add your own services to\n	| this array to grant expanded functionality to your applications.\n	|\n	*/\n\n	'providers' => [\n\n		/*\n		 * Laravel Framework Service Providers...\n		 */\n		'Illuminate\\Foundation\\Providers\\ArtisanServiceProvider',\n		'Illuminate\\Auth\\AuthServiceProvider',\n		'Illuminate\\Bus\\BusServiceProvider',\n		'Illuminate\\Cache\\CacheServiceProvider',\n		'Illuminate\\Foundation\\Providers\\ConsoleSupportServiceProvider',\n		'Illuminate\\Routing\\ControllerServiceProvider',\n		'Illuminate\\Cookie\\CookieServiceProvider',\n		'Illuminate\\Database\\DatabaseServiceProvider',\n		'Illuminate\\Encryption\\EncryptionServiceProvider',\n		'Illuminate\\Filesystem\\FilesystemServiceProvider',\n		'Illuminate\\Foundation\\Providers\\FoundationServiceProvider',\n		'Illuminate\\Hashing\\HashServiceProvider',\n		'Illuminate\\Mail\\MailServiceProvider',\n		'Illuminate\\Pagination\\PaginationServiceProvider',\n		'Illuminate\\Pipeline\\PipelineServiceProvider',\n		'Illuminate\\Queue\\QueueServiceProvider',\n		'Illuminate\\Redis\\RedisServiceProvider',\n		'Illuminate\\Auth\\Passwords\\PasswordResetServiceProvider',\n		'Illuminate\\Session\\SessionServiceProvider',\n		'Illuminate\\Translation\\TranslationServiceProvider',\n		'Illuminate\\Validation\\ValidationServiceProvider',\n		'Illuminate\\View\\ViewServiceProvider',\n\n		/*\n		 * Application Service Providers...\n		 */\n		'App\\Providers\\AppServiceProvider',\n		'App\\Providers\\BusServiceProvider',\n		'App\\Providers\\ConfigServiceProvider',\n		'App\\Providers\\EventServiceProvider',\n		'App\\Providers\\RouteServiceProvider',\n\n	],\n\n	/*\n	|--------------------------------------------------------------------------\n	| Class Aliases\n	|--------------------------------------------------------------------------\n	|\n	| This array of class aliases will be registered when this application\n	| is started. However, feel free to register as many as you wish as\n	| the aliases are \"lazy\" loaded so they don't hinder performance.\n	|\n	*/\n\n	'aliases' => [\n\n		'App'       => 'Illuminate\\Support\\Facades\\App',\n		'Artisan'   => 'Illuminate\\Support\\Facades\\Artisan',\n		'Auth'      => 'Illuminate\\Support\\Facades\\Auth',\n		'Blade'     => 'Illuminate\\Support\\Facades\\Blade',\n		'Bus'       => 'Illuminate\\Support\\Facades\\Bus',\n		'Cache'     => 'Illuminate\\Support\\Facades\\Cache',\n		'Config'    => 'Illuminate\\Support\\Facades\\Config',\n		'Cookie'    => 'Illuminate\\Support\\Facades\\Cookie',\n		'Crypt'     => 'Illuminate\\Support\\Facades\\Crypt',\n		'DB'        => 'Illuminate\\Support\\Facades\\DB',\n		'Eloquent'  => 'Illuminate\\Database\\Eloquent\\Model',\n		'Event'     => 'Illuminate\\Support\\Facades\\Event',\n		'File'      => 'Illuminate\\Support\\Facades\\File',\n		'Hash'      => 'Illuminate\\Support\\Facades\\Hash',\n		'Input'     => 'Illuminate\\Support\\Facades\\Input',\n		'Inspiring' => 'Illuminate\\Foundation\\Inspiring',\n		'Lang'      => 'Illuminate\\Support\\Facades\\Lang',\n		'Log'       => 'Illuminate\\Support\\Facades\\Log',\n		'Mail'      => 'Illuminate\\Support\\Facades\\Mail',\n		'Password'  => 'Illuminate\\Support\\Facades\\Password',\n		'Queue'     => 'Illuminate\\Support\\Facades\\Queue',\n		'Redirect'  => 'Illuminate\\Support\\Facades\\Redirect',\n		'Redis'     => 'Illuminate\\Support\\Facades\\Redis',\n		'Request'   => 'Illuminate\\Support\\Facades\\Request',\n		'Response'  => 'Illuminate\\Support\\Facades\\Response',\n		'Route'     => 'Illuminate\\Support\\Facades\\Route',\n		'Schema'    => 'Illuminate\\Support\\Facades\\Schema',\n		'Session'   => 'Illuminate\\Support\\Facades\\Session',\n		'Storage'   => 'Illuminate\\Support\\Facades\\Storage',\n		'URL'       => 'Illuminate\\Support\\Facades\\URL',\n		'Validator' => 'Illuminate\\Support\\Facades\\Validator',\n		'View'      => 'Illuminate\\Support\\Facades\\View',\n\n	],\n\n];\n",
+			"file": "config/app.php",
+			"file_size": 7110,
+			"file_write_time": 130725493187646636,
+			"settings":
+			{
+				"buffer_size": 7110,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<?php namespace App;\n\nuse Illuminate\\Auth\\Authenticatable;\nuse Illuminate\\Database\\Eloquent\\Model;\nuse Illuminate\\Auth\\Passwords\\CanResetPassword;\nuse Illuminate\\Contracts\\Auth\\Authenticatable as AuthenticatableContract;\nuse Illuminate\\Contracts\\Auth\\CanResetPassword as CanResetPasswordContract;\n\nclass User extends Model implements AuthenticatableContract, CanResetPasswordContract {\n\n	use Authenticatable, CanResetPassword;\n\n	/**\n	 * The database table used by the model.\n	 *\n	 * @var string\n	 */\n	protected $table = 'users';\n\n	/**\n	 * The attributes that are mass assignable.\n	 *\n	 * @var array\n	 */\n	protected $fillable = ['name', 'email', 'password'];\n\n	/**\n	 * The attributes excluded from the model's JSON form.\n	 *\n	 * @var array\n	 */\n	protected $hidden = ['password', 'remember_token'];\n\n}\n",
+			"file": "app/User.php",
+			"file_size": 800,
+			"file_write_time": 130725452114611167,
+			"settings":
+			{
+				"buffer_size": 800,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 219.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"html",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"server",
+				"SFTP: Edit Server…"
+			],
+			[
+				"packages",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 188.0,
+		"history":
+		[
+			"php artisan"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/xampp/htdocs/plm/vendor/composer/include_paths.php",
+		"/C/Users/Ahmed/AppData/Roaming/Sublime Text 3/Packages/CMD/cmd.py",
+		"/C/xampp/htdocs/plm/vendor/nesbot/carbon/src/Carbon/Carbon.php",
+		"/C/xampp/htdocs/plm/app/Http/Kernel.php",
+		"/C/xampp/htdocs/plm/app/Student.php",
+		"/C/xampp/htdocs/plm/app/User.php",
+		"/C/xampp/htdocs/plm/database/migrations/2015_04_01_090939_create_students_table.php",
+		"/C/xampp/htdocs/plm/composer.json",
+		"/C/xampp/htdocs/plm/config/app.php",
+		"/C/xampp/htdocs/plm/database/migrations/2015_04_03_154630_create_professors_table.php",
+		"/C/xampp/htdocs/plm/database/migrations/2014_10_12_000000_create_users_table.php",
+		"/C/xampp/htdocs/plm/database/migrations/2015_04_03_153438_professors.php",
+		"/C/xampp/htdocs/plm/storage/framework/sessions/71760154ed514ff02dbe45c3d17a7856e8d1faf8",
+		"/C/xampp/htdocs/plm/storage/framework/sessions/602c034a50ef8544e76c2265317a750a26c1ed78",
+		"/C/xampp/htdocs/plm/bootstrap/autoload.php",
+		"/C/xampp/htdocs/plm/vendor/symfony/console/Symfony/Component/Console/Output/ConsoleOutput.php",
+		"/C/xampp/htdocs/plm/app/Http/Controllers/Auth/AuthController.php",
+		"/C/xampp/htdocs/plm/bootstrap/app.php",
+		"/C/xampp/htdocs/plm/app/Http/Controllers/StudentController.php",
+		"/C/xampp/htdocs/plm/app/Http/Controllers/Controller.php",
+		"/C/xampp/htdocs/plm/resources/views/welcome.blade.php",
+		"/C/xampp/htdocs/plm/database/seeds/DatabaseSeeder.php",
+		"/C/xampp/htdocs/plm/app/Http/Middleware/Authenticate.php",
+		"/C/Users/Ahmed/AppData/Roaming/Sublime Text 3/Packages/User/textinput.sublime-snippet",
+		"/C/Users/Ahmed/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/Ahmed/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/xampp/htdocs/plm/app/Http/routes.php",
+		"/C/xampp/php/php.ini",
+		"/C/xampp/htdocs/plm/.env",
+		"/C/xampp/htdocs/plm/config/mail.php",
+		"/C/xampp/htdocs/plm/.env.example",
+		"/C/xampp/htdocs/plm/vendor/symfony/security-core/Symfony/Component/Security/Core/User/UserChecker.php",
+		"/C/xampp/htdocs/plm/vendor/symfony/security-core/Symfony/Component/Security/Core/Encoder/UserPasswordEncoder.php",
+		"/C/xampp/htdocs/plm/vendor/laravel/framework/src/Illuminate/Database/SqlServerConnection.php",
+		"/C/xampp/htdocs/plm/vendor/phpspec/phpspec/features/matchers/developer_uses_array_contain_matcher.feature",
+		"/C/xampp/htdocs/plm/vendor/laravel/framework/src/Illuminate/Routing/Controller.php",
+		"/C/xampp/htdocs/plm/vendor/doctrine/instantiator/CONTRIBUTING.md",
+		"/C/xampp/htdocs/plm/vendor/classpreloader/classpreloader/src/Config.php",
+		"/C/xampp/htdocs/plm/vendor/guzzlehttp/guzzle/src/ClientInterface.php",
+		"/C/xampp/htdocs/plm/vendor/nesbot/carbon/tests/SubTest.php",
+		"/C/xampp/htdocs/plm/app/Http/Controllers/test.php",
+		"/C/xampp/htdocs/plm/config/auth.php",
+		"/C/xampp/htdocs/plm/vendor/laravel/socialite/src/AbstractUser.php",
+		"/C/xampp/htdocs/plm/sftp-config.json",
+		"/C/xampp/htdocs/plm/vendor/composer/autoload_psr4.php",
+		"/C/xampp/htdocs/plm/artisan",
+		"/C/Users/Ahmed/AppData/Roaming/Sublime Text 3/Packages/CMD/Context.sublime-menu",
+		"/C/xampp/htdocs/plm/public/.htaccess",
+		"/C/xampp/htdocs/plm/.htaccess",
+		"/C/Users/Ahmed/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/xampp/htdocs/plm/server.php",
+		"/C/xampp/htdocs/plm/vendor/phpunit/php-code-coverage/src/CodeCoverage/Filter.php",
+		"/C/Users/Ahmed/AppData/Roaming/Sublime Text 3/Packages/User/sftp_servers/hamed",
+		"/C/xampp/htdocs/plm/app/Http/Controllers/WelcomeController.php",
+		"/C/xampp/htdocs/plm/vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Tests/File/FileTest.php",
+		"/C/xampp/htdocs/plm/config/filesystems.php",
+		"/C/xampp/htdocs/plm/vendor/react/promise/src/functions_include.php",
+		"/C/xampp/htdocs/plm/vendor/phpunit/phpunit/tests/TextUI/dataprovider-debug.phpt",
+		"/C/xampp/htdocs/plm/vendor/symfony/debug/Symfony/Component/Debug/DebugClassLoader.php",
+		"/C/xampp/htdocs/plm/vendor/symfony/debug/Symfony/Component/Debug/Debug.php",
+		"/C/xampp/htdocs/plm/vendor/phpunit/phpunit/tests/TextUI/debug.phpt",
+		"/C/xampp/htdocs/plm/vendor/phpunit/phpunit/tests/_files/DummyException.php",
+		"/C/xampp/htdocs/plm/config/database.php",
+		"/C/xampp/htdocs/plm/vendor/laravel/framework/src/Illuminate/Routing/ControllerServiceProvider.php",
+		"/C/xampp/htdocs/plm/public/robots.txt",
+		"/C/xampp/htdocs/plm/readme.md",
+		"/C/xampp/htdocs/plm/vendor/danielstjules/stringy/src/StaticStringy.php",
+		"/C/xampp/htdocs/plm/vendor/guzzlehttp/ringphp/src/Client/StreamHandler.php",
+		"/C/xampp/htdocs/plm/vendor/phpspec/phpspec/features/code_generation/developer_generates_method.feature",
+		"/C/xampp/htdocs/plm/vendor/symfony/http-kernel/Symfony/Component/HttpKernel/UriSigner.php",
+		"/C/xampp/htdocs/plm/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/CharsetObserver.php",
+		"/C/xampp/htdocs/plm/composer.lock",
+		"/C/Program Files/Sublime Text 3/changelog.txt",
+		"/C/xampp/htdocs/alton/sessions/sess_21ps87h89ahr4a9s645v5ul2g5",
+		"/C/xampp/htdocs/libertycap - Copy/inc/config.php",
+		"/C/xampp/htdocs/digital-shop/PHP/Examples/Main.php",
+		"/C/xampp/tmp/sess_0qod7gofq5ij7mip5cjhftu535",
+		"/C/xampp/tmp/why.tmp",
+		"/C/xampp/tmp/sess_cgjdhnvguoobegkcbqpkj9oc44",
+		"/C/xampp/tmp/sess_vvjq706j34al23qjjvvljse644",
+		"/C/xampp/tmp/sess_qkffhpnsiklvf5hgpktapvjns0",
+		"/C/xampp/tmp/sess_sdg5pi1qtl0or90thn0hlv9k36",
+		"/C/xampp/tmp/sess_vlu4f7qfn4e84u36opfd3g9jv4",
+		"/D/config.php",
+		"/C/xampp/htdocs/kazo.php",
+		"/C/xampp/htdocs/jo.php",
+		"/C/xampp/htdocs/digital-shop/inc/config.php",
+		"/C/xampp/htdocs/libertycap/index.php",
+		"/C/xampp/htdocs/demo/ratings.php",
+		"/C/xampp/htdocs/rating.php",
+		"/C/xampp/htdocs/libertycap/bitcoin.php",
+		"/C/xampp/htdocs/libertycap/header.php",
+		"/C/xampp/htdocs/libertycap/bitcoinp.php",
+		"/C/xampp/htdocs/libertycap/test.php",
+		"/C/xampp/htdocs/libertycap/product.php",
+		"/C/xampp/htdocs/libertycap/inc/config.php",
+		"/C/Users/Ahmed/Downloads/cleaner-cli_2.3.php",
+		"/C/xampp/htdocs/MyOnlineStore/storeadmin/inventory_list.php",
+		"/C/xampp/htdocs/libertycap/about.php",
+		"/C/xampp/htdocs/MyOnlineStore/storescripts/create_products_table.php",
+		"/C/xampp/htdocs/MyOnlineStore/storescripts/create_admin_table.php",
+		"/C/xampp/htdocs/MyOnlineStore/storeadmin/admin_login.php",
+		"/C/xampp/htdocs/allergital/home.php",
+		"/C/xampp/htdocs/anzk/captcha.php",
+		"/C/xampp/htdocs/allergital/login.php",
+		"/C/xampp/htdocs/jquery-weekcalendar-1.2.2/full_demo/events.json",
+		"/C/Users/Ahmed/AppData/Local/Temp/Rar$DRa0.514/PHP/Examples/Main.php",
+		"/D/style.css",
+		"/C/xampp/htdocs/allergital/style.css",
+		"/C/xampp/htdocs/libertycap/php.ini",
+		"/C/xampp/htdocs/ebay/installer/configuration.php",
+		"/C/xampp/htdocs/MyOnlineStore/index.php",
+		"/C/Users/Ahmed/AppData/Local/Temp/Rar$DRa0.349/Add-it-to-the-Form.php",
+		"/C/xampp/htdocs/MyOnlineStore/template_header.php",
+		"/C/Users/Ahmed/AppData/Local/Temp/Rar$DRa0.631/captcha.php",
+		"/C/xampp/htdocs/MyOnlineStore/template_footer.php",
+		"/C/xampp/htdocs/work/first.php",
+		"/C/xampp/htdocs/MyOnlineStore/storeadmin/index.php"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"fakemail",
+			"vhost",
+			"vh",
+			"ssl",
+			"Override none",
+			"override none",
+			"override",
+			"data",
+			"http",
+			"p>",
+			"</",
+			"\"]//);"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"Override all"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/Http/routes.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 636,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								438,
+								438
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/Http/Controllers/Auth/AuthController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1103,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1103,
+								1103
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 247.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "public/index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1807,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								626,
+								626
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 171.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1807,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1145,
+								1145
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 380.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/C/xampp/plm_laravel/.htaccess",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 98,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								87,
+								87
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/Http/Controllers/WelcomeController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 769,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								603,
+								603
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "database/migrations/2014_10_12_000000_create_users_table.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 715,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								485,
+								494
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 114.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "composer.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 819,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								353,
+								353
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 133.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "config/app.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7110,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "app/User.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 800,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								375,
+								375
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 612.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 35.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 232.0
+	},
+	"pinned_build_system": "",
+	"project": "plm.sublime-project",
+	"replace":
+	{
+		"height": 60.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"index.php",
+				"public\\index.php"
+			],
+			[
+				"path",
+				"vendor\\composer\\include_paths.php"
+			],
+			[
+				"user",
+				"app\\User.php"
+			],
+			[
+				"car",
+				"vendor\\nesbot\\carbon\\src\\Carbon\\Carbon.php"
+			],
+			[
+				"app",
+				"config\\app.php"
+			],
+			[
+				"comp",
+				"composer.json"
+			],
+			[
+				"create_u",
+				"database\\migrations\\2014_10_12_000000_create_users_table.php"
+			],
+			[
+				"authcon",
+				"app\\Http\\Controllers\\Auth\\AuthController.php"
+			],
+			[
+				"route",
+				"app\\Http\\routes.php"
+			],
+			[
+				"ker",
+				"app\\Http\\Kernel.php"
+			],
+			[
+				"com",
+				"composer.json"
+			],
+			[
+				"compos",
+				"composer.json"
+			],
+			[
+				"auto",
+				"bootstrap\\autoload.php"
+			],
+			[
+				"",
+				"config\\mail.php"
+			],
+			[
+				"rou",
+				"app\\Http\\routes.php"
+			],
+			[
+				"stcontroller",
+				"app\\Http\\Controllers\\StudentController.php"
+			],
+			[
+				"rout",
+				"app\\Http\\routes.php"
+			],
+			[
+				"stu",
+				"app\\Student.php"
+			],
+			[
+				"stude",
+				"app\\Student.php"
+			],
+			[
+				"authco",
+				"app\\Http\\Controllers\\Auth\\AuthController.php"
+			],
+			[
+				"config",
+				"vendor\\classpreloader\\classpreloader\\src\\Config.php"
+			],
+			[
+				".ht",
+				".htaccess"
+			],
+			[
+				".h",
+				"public\\.htaccess"
+			],
+			[
+				"filter",
+				"vendor\\phpunit\\php-code-coverage\\src\\CodeCoverage\\Filter.php"
+			],
+			[
+				"welc",
+				"app\\Http\\Controllers\\WelcomeController.php"
+			],
+			[
+				"co",
+				"vendor\\symfony\\console\\Symfony\\Component\\Console\\Output\\ConsoleOutput.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 848.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 374.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

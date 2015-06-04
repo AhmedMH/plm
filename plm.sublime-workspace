@@ -1,0 +1,2151 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"btn",
+				"btn-social"
+			],
+			[
+				"fla",
+				"flash_message"
+			],
+			[
+				"Re",
+				"Request"
+			],
+			[
+				"o",
+				"oauth"
+			],
+			[
+				"ty",
+				"typename"
+			],
+			[
+				"data",
+				"data-id"
+			],
+			[
+				"c",
+				"class	Attr"
+			],
+			[
+				"mra",
+				"margin-bottom"
+			],
+			[
+				"req",
+				"request"
+			],
+			[
+				"re",
+				"ret1	return true"
+			],
+			[
+				"st",
+				"style	Tag"
+			],
+			[
+				"ech",
+				"echo"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "resources/views/choosetype.blade.php",
+			"settings":
+			{
+				"buffer_size": 3227,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/xampp/htdocs/phpquestionbank-code-4/SqlHelper.php",
+			"settings":
+			{
+				"buffer_size": 3530,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/xampp/htdocs/phpquestionbank-code-4/checklogin.php",
+			"settings":
+			{
+				"buffer_size": 1446,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/xampp/htdocs/phpquestionbank-code-4/login.php",
+			"settings":
+			{
+				"buffer_size": 762,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Http/Controllers/LoginController.php",
+			"settings":
+			{
+				"buffer_size": 2040,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/laravel/socialite/src/Two/AbstractProvider.php",
+			"settings":
+			{
+				"buffer_size": 6204,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "storage/logs/laravel-2015-05-06.log",
+			"settings":
+			{
+				"buffer_size": 48107,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "storage/logs/laravel-2015-05-01.log",
+			"settings":
+			{
+				"buffer_size": 11811,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "storage/logs/laravel-2015-05-07.log",
+			"settings":
+			{
+				"buffer_size": 47652,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/xampp/htdocs/plm/css/style.css",
+			"settings":
+			{
+				"buffer_size": 15607,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resources/views/login.blade.php",
+			"settings":
+			{
+				"buffer_size": 3614,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "resources/views/auth/login.blade.php",
+			"settings":
+			{
+				"buffer_size": 7261,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resources/views/auth/register.blade.php",
+			"settings":
+			{
+				"buffer_size": 7639,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resources/views/auth/password.blade.php",
+			"settings":
+			{
+				"buffer_size": 3223,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/xampp/htdocs/charity/app/views/layouts/default.blade.php",
+			"settings":
+			{
+				"buffer_size": 6487,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/Http/routes.php",
+			"settings":
+			{
+				"buffer_size": 5550,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/xampp/apache/conf/extra/httpd-vhosts.conf",
+			"settings":
+			{
+				"buffer_size": 2239,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/xampp/htdocs/boot/index.php",
+			"settings":
+			{
+				"buffer_size": 23130,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Windows/System32/drivers/etc/hosts",
+			"settings":
+			{
+				"buffer_size": 907,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "composer.json",
+			"settings":
+			{
+				"buffer_size": 882,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/laravel/framework/src/Illuminate/Support/ServiceProvider.php",
+			"settings":
+			{
+				"buffer_size": 4406,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Http/Controllers/Auth/AuthController.php",
+			"settings":
+			{
+				"buffer_size": 1204,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesAndRegistersUsers.php",
+			"settings":
+			{
+				"buffer_size": 2782,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resources/views/common.blade.php",
+			"settings":
+			{
+				"buffer_size": 7104,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "config/session.php",
+			"settings":
+			{
+				"buffer_size": 4928,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/app.php",
+			"settings":
+			{
+				"buffer_size": 7368,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Http/Middleware/NoHttpCache.php",
+			"settings":
+			{
+				"buffer_size": 1297,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Providers/RouteServiceProvider.php",
+			"settings":
+			{
+				"buffer_size": 931,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/laravel/framework/src/Illuminate/Http/Response.php",
+			"settings":
+			{
+				"buffer_size": 1942,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resources/views/welcome.blade.php",
+			"settings":
+			{
+				"buffer_size": 805,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": ".env",
+			"settings":
+			{
+				"buffer_size": 309,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Http/Kernel.php",
+			"settings":
+			{
+				"buffer_size": 1074,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resources/views/vendor/flash/message.blade.php",
+			"settings":
+			{
+				"buffer_size": 888,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Http/Controllers/HomeController.php",
+			"settings":
+			{
+				"buffer_size": 792,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 219.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"html",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"server",
+				"SFTP: Edit Server…"
+			],
+			[
+				"packages",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 188.0,
+		"history":
+		[
+			"php artisan"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/xampp/plm_laravel",
+		"/C/xampp/plm_laravel/app",
+		"/C/xampp/plm_laravel/app/Providers",
+		"/C/xampp/plm_laravel/app/Services",
+		"/C/xampp/plm_laravel/database",
+		"/C/xampp/plm_laravel/database/migrations",
+		"/C/xampp/plm_laravel/database/seeds",
+		"/C/xampp/plm_laravel/node_modules",
+		"/C/xampp/plm_laravel/node_modules/gulp",
+		"/C/xampp/plm_laravel/resources",
+		"/C/xampp/plm_laravel/resources/assets",
+		"/C/xampp/plm_laravel/resources/assets/less",
+		"/C/xampp/plm_laravel/resources/views",
+		"/C/xampp/plm_laravel/resources/views/auth",
+		"/C/xampp/plm_laravel/storage",
+		"/C/xampp/plm_laravel/storage/app",
+		"/C/xampp/plm_laravel/storage/logs"
+	],
+	"file_history":
+	[
+		"/c/xampp/Server.xml",
+		"/c/xampp/FileZillaFTP/FileZilla",
+		"/C/xampp/plm_laravel/config/session.php",
+		"/C/xampp/htdocs/sha3er/public/.htaccess",
+		"/C/xampp/mysql/data/sha3er/questions.frm",
+		"/C/xampp/htdocs/charity/app/controllers/respondercontroller.php",
+		"/C/xampp/htdocs/charity/app/controllers/reasoncontroller.php",
+		"/C/xampp/htdocs/sha3er/app/Http/routes.php",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/C/xampp/plm_laravel/storage/framework/sessions/c5576bf8d659b1fde0e67514887fdffb1405c1b6",
+		"/C/xampp/plm_laravel/storage/framework/sessions/e9634f6d8f0a9f247791a4c6ad3586cd63e7b957",
+		"/C/xampp/plm_laravel/storage/framework/sessions/7df5348e390d4818ac1f6204c260dee2cdc6e173",
+		"/C/xampp/plm_laravel/storage/framework/sessions/333170345e5a4662b9ff4f622fb7dde361d936f0",
+		"/C/xampp/plm_laravel/app/Commands/Command.php",
+		"/C/xampp/htdocs/phpquestionbank-code-4/login.php",
+		"/C/xampp/htdocs/phpquestionbank-code-4/setup.sql",
+		"/C/xampp/mysql/bin/my.ini",
+		"/C/xampp/phpMyAdmin/config.inc.php",
+		"/C/xampp/plm_laravel/composer.json",
+		"/C/xampp/plm_laravel/vendor/laravel/socialite/src/Two/AbstractProvider.php",
+		"/C/xampp/plm_laravel/vendor/league/oauth1-client/src/Client/Server/Twitter.php",
+		"/C/xampp/plm_laravel/vendor/laravel/socialite/src/One/AbstractProvider.php",
+		"/C/xampp/plm_laravel/config/services.php",
+		"/C/xampp/apache/conf/extra/httpd-xampp.conf",
+		"/C/xampp/plm_laravel/.env",
+		"/C/xampp/apache/conf/extra/httpd-vhosts.conf",
+		"/C/xampp/apache/conf/httpd.conf",
+		"/C/xampp/plm_laravel/vendor/league/oauth1-client/src/Client/Credentials/TokenCredentials.php",
+		"/C/xampp/plm_laravel/vendor/league/oauth1-client/src/Client/Credentials/Credentials.php",
+		"/C/xampp/plm_laravel/resources/views/auth/register.blade.php",
+		"/C/xampp/plm_laravel/resources/views/auth/password.blade.php",
+		"/C/xampp/plm_laravel/resources/views/auth/login.blade.php",
+		"/C/xampp/plm_laravel/resources/views/choosetype.blade.php",
+		"/C/xampp/htdocs/plm/.htaccess",
+		"/C/xampp/plm_laravel/.htaccess",
+		"/C/xampp/htdocs/plm/css/style.css",
+		"/C/xampp/plm_laravel/resources/views/home.blade.php",
+		"/C/xampp/plm_laravel/resources/views/login.blade.php",
+		"/C/xampp/plm_laravel/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesAndRegistersUsers.php",
+		"/C/xampp/plm_laravel/resources/views/common.blade.php",
+		"/C/xampp/plm_laravel/database/migrations/2014_10_12_000000_create_users_table.php",
+		"/C/xampp/plm_laravel/vendor/laravel/socialite/src/One/TwitterProvider.php",
+		"/C/xampp/php/php.ini",
+		"/C/xampp/plm_laravel/app/Http/Requests/TypeRequest.php",
+		"/C/xampp/plm_laravel/vendor/laracasts/flash/src/views/message.blade.php",
+		"/C/xampp/plm_laravel/config/app.php",
+		"/C/xampp/plm_laravel/app/Http/Controllers/LoginController.php",
+		"/C/xampp/plm_laravel/vendor/laravel/socialite/src/SocialiteManager.php",
+		"/C/xampp/plm_laravel/storage/logs/laravel-2015-04-08.log",
+		"/C/xampp/plm_laravel/app/Http/Controllers/ChooseController.php",
+		"/C/xampp/plm_laravel/vendor/laracasts/flash/src/Laracasts/Flash/FlashNotifier.php",
+		"/C/xampp/plm_laravel/vendor/laravel/framework/src/Illuminate/Contracts/Routing/Registrar.php",
+		"/C/xampp/plm_laravel/vendor/laracasts/flash/src/views/modal.blade.php",
+		"/C/xampp/plm_laravel/app/Http/routes.php",
+		"/C/xampp/plm_laravel/vendor/laravel/framework/src/Illuminate/Routing/RoutingServiceProvider.php",
+		"/C/xampp/plm_laravel/app/Providers/RouteServiceProvider.php",
+		"/C/xampp/htdocs/charity/app/routes.php",
+		"/C/xampp/php/cacert.pem",
+		"/C/xampp/plm_laravel/vendor/laravel/framework/src/Illuminate/Filesystem/FilesystemServiceProvider.php",
+		"/C/xampp/htdocs/plm/css/app.css",
+		"/C/xampp/plm_laravel/app/Http/Middleware/ChooseUserType.php",
+		"/C/xampp/plm_laravel/app/Http/Controllers/FileController.php",
+		"/C/xampp/plm_laravel/config/filesystems.php",
+		"/C/xampp/plm_laravel/app/Http/Controllers/WelcomeController.php",
+		"/C/xampp/plm_laravel/app/User.php",
+		"/C/xampp/plm_laravel/resources/views/app.blade.php",
+		"/C/xampp/plm_laravel/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/Esmtp/Authenticator.php",
+		"/C/xampp/plm_laravel/vendor/laravel/framework/src/Illuminate/Http/Request.php",
+		"/C/xampp/plm_laravel/app/Http/Requests/Type.php",
+		"/C/xampp/plm_laravel/app/Http/Controllers/HomeController.php",
+		"/C/xampp/plm_laravel/vendor/laravel/framework/src/Illuminate/Http/RedirectResponse.php",
+		"/C/xampp/plm_laravel/app/Http/Middleware/Authenticate.php",
+		"/C/xampp/plm_laravel/vendor/laravel/framework/src/Illuminate/Auth/Guard.php",
+		"/C/xampp/plm_laravel/vendor/laravel/framework/src/Illuminate/Http/Response.php",
+		"/C/xampp/plm_laravel/app/Http/Controllers/StudentController.php",
+		"/C/xampp/plm_laravel/vendor/laravel/framework/src/Illuminate/Http/Middleware/FrameGuard.php",
+		"/C/xampp/plm_laravel/app/Http/Middleware/CantChooseUsertype.php",
+		"/C/xampp/plm_laravel/app/Http/Kernel.php",
+		"/C/xampp/plm_laravel/vendor/phpspec/php-diff/example/styles.css",
+		"/C/xampp/htdocs/laravel5/app/Services/Registrar.php",
+		"/C/xampp/plm_laravel/vendor/laravel/framework/src/Illuminate/Foundation/Auth/ResetsPasswords.php",
+		"/C/xampp/plm_laravel/vendor/laravel/socialite/tests/OAuthOneTest.php",
+		"/C/Users/Ahmed/AppData/Roaming/Sublime Text 3/Packages/User/PHP.sublime-settings",
+		"/C/Users/Ahmed/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Ahmed/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/xampp/plm_laravel/app/Http/Controllers/Auth/AuthController.php",
+		"/C/xampp/plm_laravel/app/Services/Registrar.php",
+		"/C/xampp/plm_laravel/vendor/laravel/framework/src/Illuminate/Contracts/Auth/Guard.php",
+		"/C/xampp/plm_laravel/storage/framework/views/c38a0a6df658697725521f746eb28b0f",
+		"/C/xampp/php/php.ini-development",
+		"/C/xampp/php/php.ini-production",
+		"/C/xampp/plm_laravel/resources/views/vendor/.gitkeep",
+		"/C/xampp/plm_laravel/resources/views/errors/404.blade.php",
+		"/C/xampp/plm_laravel/resources/views/errors/503.blade.php",
+		"/C/xampp/plm_laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php",
+		"/C/xampp/plm_laravel/app/models/User.php",
+		"/C/xampp/plm_laravel/database/migrations/2015_04_05_123112_create_professors_table.php",
+		"/C/xampp/htdocs/.htaccess",
+		"/C/Users/Ahmed/AppData/Roaming/Sublime Text 3/Packages/CMD/cmd.py",
+		"/C/Users/Ahmed/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Ahmed/AppData/Roaming/Sublime Text 3/Packages/CMD/Context.sublime-menu",
+		"/C/xampp/htdocs/plm/vendor/composer/include_paths.php",
+		"/C/xampp/htdocs/plm/vendor/nesbot/carbon/src/Carbon/Carbon.php",
+		"/C/xampp/htdocs/plm/app/Http/Kernel.php",
+		"/C/xampp/htdocs/plm/app/Student.php",
+		"/C/xampp/htdocs/plm/app/User.php",
+		"/C/xampp/htdocs/plm/database/migrations/2015_04_01_090939_create_students_table.php",
+		"/C/xampp/htdocs/plm/composer.json",
+		"/C/xampp/htdocs/plm/config/app.php",
+		"/C/xampp/htdocs/plm/database/migrations/2015_04_03_154630_create_professors_table.php",
+		"/C/xampp/htdocs/plm/database/migrations/2014_10_12_000000_create_users_table.php",
+		"/C/xampp/htdocs/plm/database/migrations/2015_04_03_153438_professors.php",
+		"/C/xampp/htdocs/plm/storage/framework/sessions/71760154ed514ff02dbe45c3d17a7856e8d1faf8",
+		"/C/xampp/htdocs/plm/storage/framework/sessions/602c034a50ef8544e76c2265317a750a26c1ed78",
+		"/C/xampp/htdocs/plm/bootstrap/autoload.php",
+		"/C/xampp/htdocs/plm/vendor/symfony/console/Symfony/Component/Console/Output/ConsoleOutput.php",
+		"/C/xampp/htdocs/plm/app/Http/Controllers/Auth/AuthController.php",
+		"/C/xampp/htdocs/plm/bootstrap/app.php",
+		"/C/xampp/htdocs/plm/app/Http/Controllers/StudentController.php",
+		"/C/xampp/htdocs/plm/app/Http/Controllers/Controller.php",
+		"/C/xampp/htdocs/plm/resources/views/welcome.blade.php",
+		"/C/xampp/htdocs/plm/database/seeds/DatabaseSeeder.php",
+		"/C/xampp/htdocs/plm/app/Http/Middleware/Authenticate.php",
+		"/C/Users/Ahmed/AppData/Roaming/Sublime Text 3/Packages/User/textinput.sublime-snippet",
+		"/C/Users/Ahmed/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/xampp/htdocs/plm/app/Http/routes.php",
+		"/C/xampp/htdocs/plm/.env",
+		"/C/xampp/htdocs/plm/config/mail.php"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"s",
+			"Soc",
+			"soc",
+			"auth\\",
+			"user",
+			"root",
+			"outline",
+			"htdocs",
+			"127.0.0.1",
+			"localhost",
+			"$temp",
+			"temp",
+			"AbstractProvider",
+			"driver",
+			"extension=php_fileinfo",
+			"extension",
+			"file",
+			"auth",
+			"input",
+			"content",
+			"input",
+			"localhost",
+			"smtp",
+			"user",
+			"curl",
+			"curl.cainfo",
+			"curl",
+			"curl.cainfo",
+			"input",
+			"fakemail",
+			"vhost",
+			"vh",
+			"ssl",
+			"Override none",
+			"override none",
+			"override",
+			"data",
+			"http",
+			"p>",
+			"</",
+			"\"]//);"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"Override all"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 32,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "resources/views/choosetype.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3227,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2255,
+								2255
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 864.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 28,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/xampp/htdocs/phpquestionbank-code-4/SqlHelper.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3530,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								171,
+								171
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 25,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/xampp/htdocs/phpquestionbank-code-4/checklogin.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1446,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1164,
+								1239
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 396.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 23,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/xampp/htdocs/phpquestionbank-code-4/login.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 762,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								416,
+								420
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 249.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 24,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/Http/Controllers/LoginController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2040,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								414,
+								414
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "vendor/laravel/socialite/src/Two/AbstractProvider.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6204,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3743,
+								3830
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2537.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "storage/logs/laravel-2015-05-06.log",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 48107,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								30091,
+								30094
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 6713.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "storage/logs/laravel-2015-05-01.log",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11811,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3808,
+								3811
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 647.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "storage/logs/laravel-2015-05-07.log",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 47652,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1994,
+								1994
+							]
+						],
+						"settings":
+						{
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/C/xampp/htdocs/plm/css/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 15607,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								15472,
+								15472
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 22,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "resources/views/login.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3614,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								598,
+								598
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 928.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "resources/views/auth/login.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7261,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1177,
+								1166
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 270.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "resources/views/auth/register.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7639,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								63,
+								63
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 31,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "resources/views/auth/password.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3223,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								65,
+								65
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 29,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "/C/xampp/htdocs/charity/app/views/layouts/default.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6487,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3984,
+								3995
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1421.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 32,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "app/Http/routes.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5550,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4985,
+								4985
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1560.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "/C/xampp/apache/conf/extra/httpd-vhosts.conf",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2239,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1918,
+								1918
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 668.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "/C/xampp/htdocs/boot/index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 23130,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								449,
+								454
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "/C/Windows/System32/drivers/etc/hosts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 907,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								897,
+								897
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "composer.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 882,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								288,
+								258
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"file": "vendor/laravel/framework/src/Illuminate/Support/ServiceProvider.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4406,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4406,
+								4406
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3778.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 19,
+					"type": "text"
+				},
+				{
+					"buffer": 21,
+					"file": "app/Http/Controllers/Auth/AuthController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1204,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								686,
+								716
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 252.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 22,
+					"file": "vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesAndRegistersUsers.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2782,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2782,
+								2782
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2124.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 23,
+					"file": "resources/views/common.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7104,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								611,
+								522
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 54.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 24,
+					"file": "config/session.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4928,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4492,
+								4496
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 756.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 25,
+					"file": "config/app.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7368,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6466,
+								6466
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3150.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 26,
+					"file": "app/Http/Middleware/NoHttpCache.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1297,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								862,
+								862
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 229.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 27,
+					"type": "text"
+				},
+				{
+					"buffer": 27,
+					"file": "app/Providers/RouteServiceProvider.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 931,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 33,
+					"type": "text"
+				},
+				{
+					"buffer": 28,
+					"file": "vendor/laravel/framework/src/Illuminate/Http/Response.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1942,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 103.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 21,
+					"type": "text"
+				},
+				{
+					"buffer": 29,
+					"file": "resources/views/welcome.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 805,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								708,
+								708
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 319.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 30,
+					"type": "text"
+				},
+				{
+					"buffer": 30,
+					"file": ".env",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 309,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								215,
+								215
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 20,
+					"type": "text"
+				},
+				{
+					"buffer": 31,
+					"file": "app/Http/Kernel.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1074,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								580,
+								547
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 247.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 32,
+					"file": "resources/views/vendor/flash/message.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 888,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								637,
+								637
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 33,
+					"file": "app/Http/Controllers/HomeController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 792,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								587,
+								587
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 139.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 26,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 35.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 232.0
+	},
+	"pinned_build_system": "",
+	"project": "plm.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"session",
+				"config\\session.php"
+			],
+			[
+				"sess",
+				"config\\session.php"
+			],
+			[
+				"abstractprovider",
+				"vendor\\laravel\\socialite\\src\\Two\\AbstractProvider.php"
+			],
+			[
+				"lo",
+				"app\\Http\\Controllers\\LoginController.php"
+			],
+			[
+				"log",
+				"app\\Http\\Controllers\\LoginController.php"
+			],
+			[
+				".ht",
+				"C:\\xampp\\htdocs\\sha3er\\public\\.htaccess"
+			],
+			[
+				"",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Auth\\AuthenticatesAndRegistersUsers.php"
+			],
+			[
+				"route",
+				"app\\Http\\routes.php"
+			],
+			[
+				"authenticatesandregistersusers",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Auth\\AuthenticatesAndRegistersUsers.php"
+			],
+			[
+				"auth",
+				"app\\Http\\Controllers\\Auth\\AuthController.php"
+			],
+			[
+				"app",
+				"config\\app.php"
+			],
+			[
+				"rout",
+				"app\\Http\\routes.php"
+			],
+			[
+				"compo",
+				"composer.json"
+			],
+			[
+				"common",
+				"resources\\views\\common.blade.php"
+			],
+			[
+				"rou",
+				"app\\Http\\routes.php"
+			],
+			[
+				"flashme",
+				"resources\\views\\vendor\\flash\\message.blade.php"
+			],
+			[
+				"login",
+				"resources\\views\\auth\\login.blade.php"
+			],
+			[
+				"comp",
+				"composer.json"
+			],
+			[
+				"serviceprovider",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Support\\ServiceProvider.php"
+			],
+			[
+				"loginco",
+				"app\\Http\\Controllers\\LoginController.php"
+			],
+			[
+				"comm",
+				"app\\Commands\\Command.php"
+			],
+			[
+				"choo",
+				"resources\\views\\choosetype.blade.php"
+			],
+			[
+				"regis",
+				"resources\\views\\auth\\register.blade.php"
+			],
+			[
+				"routes",
+				"app\\Providers\\RouteServiceProvider.php"
+			],
+			[
+				"illuminate/http/response",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php"
+			],
+			[
+				"response",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php"
+			],
+			[
+				"service",
+				"config\\services.php"
+			],
+			[
+				"server/",
+				"vendor\\league\\oauth1-client\\src\\Client\\Server\\Twitter.php"
+			],
+			[
+				"gettokencredentials",
+				"vendor\\league\\oauth1-client\\src\\Client\\Credentials\\TokenCredentials.php"
+			],
+			[
+				"league/oauth1/client/credentials",
+				"vendor\\league\\oauth1-client\\src\\Client\\Credentials\\Credentials.php"
+			],
+			[
+				"twitterprovider",
+				"vendor\\laravel\\socialite\\src\\One\\TwitterProvider.php"
+			],
+			[
+				"socialite",
+				"vendor\\laravel\\socialite\\src\\SocialiteManager.php"
+			],
+			[
+				"servi",
+				"config\\services.php"
+			],
+			[
+				"ser",
+				"config\\services.php"
+			],
+			[
+				"services",
+				"config\\services.php"
+			],
+			[
+				"createus",
+				"database\\migrations\\2014_10_12_000000_create_users_table.php"
+			],
+			[
+				"app.php",
+				"config\\app.php"
+			],
+			[
+				"flash/m",
+				"vendor\\laracasts\\flash\\src\\views\\message.blade.php"
+			],
+			[
+				"flash/me",
+				"vendor\\laracasts\\flash\\src\\views\\message.blade.php"
+			],
+			[
+				"flas",
+				"vendor\\laracasts\\flash\\src\\Laracasts\\Flash\\FlashNotifier.php"
+			],
+			[
+				"flash/messa",
+				"vendor\\laracasts\\flash\\src\\views\\message.blade.php"
+			],
+			[
+				"flashnot",
+				"vendor\\laracasts\\flash\\src\\Laracasts\\Flash\\FlashNotifier.php"
+			],
+			[
+				"flash",
+				"vendor\\laracasts\\flash\\src\\Laracasts\\Flash\\FlashNotifier.php"
+			],
+			[
+				"choosec",
+				"app\\Http\\Controllers\\ChooseController.php"
+			],
+			[
+				"home",
+				"resources\\views\\home.blade.php"
+			],
+			[
+				"routing",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RoutingServiceProvider.php"
+			],
+			[
+				"registrar",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Contracts\\Routing\\Registrar.php"
+			],
+			[
+				"choose",
+				"resources\\views\\choosetype.blade.php"
+			],
+			[
+				"filecontroller",
+				"app\\Http\\Controllers\\FileController.php"
+			],
+			[
+				"filesystemserviceprovider",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\FilesystemServiceProvider.php"
+			],
+			[
+				"file",
+				"config\\filesystems.php"
+			],
+			[
+				"authenticator",
+				"vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Transport\\Esmtp\\Authenticator.php"
+			],
+			[
+				"request",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Http\\Request.php"
+			],
+			[
+				"logi",
+				"app\\Http\\Controllers\\LoginController.php"
+			],
+			[
+				"wel",
+				"app\\Http\\Controllers\\WelcomeController.php"
+			],
+			[
+				"redirectresponse",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Http\\RedirectResponse.php"
+			],
+			[
+				"guard",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Guard.php"
+			],
+			[
+				"hom",
+				"app\\Http\\Controllers\\HomeController.php"
+			],
+			[
+				"frame",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\FrameGuard.php"
+			],
+			[
+				"gaurd",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Guard.php"
+			],
+			[
+				"sty",
+				"vendor\\phpspec\\php-diff\\example\\styles.css"
+			],
+			[
+				"choos",
+				"app\\Http\\Controllers\\ChooseController.php"
+			],
+			[
+				"ro",
+				"app\\Http\\routes.php"
+			],
+			[
+				"resetspasswords",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Auth\\ResetsPasswords.php"
+			],
+			[
+				"env",
+				".env"
+			],
+			[
+				"localhost",
+				"vendor\\laravel\\socialite\\tests\\OAuthOneTest.php"
+			],
+			[
+				"c38a0a6df658697725521f746eb28b0f",
+				"storage\\framework\\views\\c38a0a6df658697725521f746eb28b0f"
+			],
+			[
+				"creuser",
+				"database\\migrations\\2014_10_12_000000_create_users_table.php"
+			],
+			[
+				"servic",
+				"config\\services.php"
+			],
+			[
+				"loginc",
+				"app\\Http\\Controllers\\LoginController.php"
+			],
+			[
+				"checkformaintenancemode",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php"
+			],
+			[
+				"co",
+				"composer.json"
+			],
+			[
+				"app.",
+				"resources\\views\\app.blade.php"
+			],
+			[
+				"user",
+				"app\\User.php"
+			],
+			[
+				"index.php",
+				"public\\index.php"
+			],
+			[
+				"path",
+				"vendor\\composer\\include_paths.php"
+			],
+			[
+				"car",
+				"vendor\\nesbot\\carbon\\src\\Carbon\\Carbon.php"
+			],
+			[
+				"create_u",
+				"database\\migrations\\2014_10_12_000000_create_users_table.php"
+			],
+			[
+				"authcon",
+				"app\\Http\\Controllers\\Auth\\AuthController.php"
+			],
+			[
+				"ker",
+				"app\\Http\\Kernel.php"
+			],
+			[
+				"com",
+				"composer.json"
+			],
+			[
+				"compos",
+				"composer.json"
+			],
+			[
+				"auto",
+				"bootstrap\\autoload.php"
+			],
+			[
+				"stcontroller",
+				"app\\Http\\Controllers\\StudentController.php"
+			],
+			[
+				"stu",
+				"app\\Student.php"
+			],
+			[
+				"stude",
+				"app\\Student.php"
+			],
+			[
+				"authco",
+				"app\\Http\\Controllers\\Auth\\AuthController.php"
+			],
+			[
+				"config",
+				"vendor\\classpreloader\\classpreloader\\src\\Config.php"
+			],
+			[
+				".h",
+				"public\\.htaccess"
+			],
+			[
+				"filter",
+				"vendor\\phpunit\\php-code-coverage\\src\\CodeCoverage\\Filter.php"
+			],
+			[
+				"welc",
+				"app\\Http\\Controllers\\WelcomeController.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 848.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 374.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
